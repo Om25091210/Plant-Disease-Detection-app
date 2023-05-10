@@ -1,0 +1,4 @@
+0 Gray leaf
+1 Common rust
+2 healthy
+3 Northen Leaf blight
