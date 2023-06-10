@@ -203,29 +203,29 @@ class MainActivity : AppCompatActivity() {
         interpreter?.run(modelInput, resultArray)
 
         // Class 1
-        Log.e(TAG, "Corn (Maize) - Gray leaf : ${abs(resultArray[0][0].toInt())}")
+        Log.e(TAG, "Tomato Healthy : ${abs(resultArray[0][0].toInt())}")
         // Class 2
-        Log.e(TAG, "Corn (Maize) - Common rust : ${abs(resultArray[0][1].toInt())}")
+        Log.e(TAG, "Yellow leave curl Virus : ${abs(resultArray[0][1].toInt())}")
         // Class 3
-        Log.e(TAG, "Healthy Corn Leaf : ${abs(resultArray[0][2].toInt())}")
+        Log.e(TAG, "Target Spot : ${abs(resultArray[0][2].toInt())}")
         // Class 4
-        Log.e(TAG, "Corn (Maize) - Northen Leaf Blight : ${abs(resultArray[0][3].toInt())}")
+        Log.e(TAG, "Spider mites : ${abs(resultArray[0][3].toInt())}")
         printMax(abs(resultArray[0][0].toInt()), abs(resultArray[0][1].toInt()), abs(resultArray[0][2].toInt()),abs(resultArray[0][3].toInt()))  // Output: "3 is the maximum"
     }
     fun printMax(a: Int, b: Int, c: Int, d:Int) {
         val max = Math.max(Math.max(a, b), Math.max(c, d));
         if (max == a) {
-            findViewById<TextView>(R.id.prediction).text="Corn (Maize) - Gray leaf"
+            findViewById<TextView>(R.id.prediction).text="Tomato Healthy"
             println("$a is the maximum")
         } else if (max == b) {
-            findViewById<TextView>(R.id.prediction).text="Corn (Maize) - Common rust"
+            findViewById<TextView>(R.id.prediction).text="Yellow leave curl Virus"
             println("$b is the maximum")
         }
         else if(max==c){
-            findViewById<TextView>(R.id.prediction).text="Healthy Corn Leaf"
+            findViewById<TextView>(R.id.prediction).text="Target Spot"
         }
         else {
-            findViewById<TextView>(R.id.prediction).text="Corn (Maize) - Northen Leaf Blight"
+            findViewById<TextView>(R.id.prediction).text="Spider mites"
             println("$c is the maximum")
         }
     }

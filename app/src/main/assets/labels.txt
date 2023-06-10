@@ -1,4 +1,4 @@
-0 Gray leaf
-1 Common rust
-2 healthy
-3 Northen Leaf blight
+0 Tomato Healthy
+1 Yellow leave curl Virus
+2 Target Spot
+3 Spider mites
